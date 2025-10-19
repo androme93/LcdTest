@@ -29,8 +29,11 @@ def check_dependencies():
     except ImportError:
         print("✗ PyQt5 未安装")
         print("\n请运行以下命令安装依赖:")
-        print("  pip install -r requirements.txt")
-        print("\n或在Windows上运行: install.bat")
+        if sys.platform == 'win32':
+            print("  Windows用户: 运行 install.bat")
+            print("  或手动执行: pip install -r requirements.txt")
+        else:
+            print("  pip install -r requirements.txt")
         return False
 
 

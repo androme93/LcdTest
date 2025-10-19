@@ -89,13 +89,17 @@
 
 **A**: 修改`main.py`文件中的以下代码：
 
+在 `start_bright_dark_test` 方法中，将：
 ```python
-# 将这行
-self.bright_dark_test.showMaximized()
-
-# 改为
-self.bright_dark_test.showFullScreen()
+self.bright_dark_test.showMaximized()  # 最大化窗口模式
 ```
+
+改为：
+```python
+self.bright_dark_test.showFullScreen()  # 全屏模式
+```
+
+同样，在 `show_touch_test` 方法中也需要做相应修改。
 
 ### Q3: 如何调整窗口大小？
 

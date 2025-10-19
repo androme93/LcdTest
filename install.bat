@@ -21,8 +21,13 @@ if errorlevel 1 (
 echo 正在安装依赖包...
 echo.
 
-REM 升级pip
+REM 升级pip (忽略错误继续)
+echo 正在升级pip...
 python -m pip install --upgrade pip
+if errorlevel 1 (
+    echo 警告: pip升级失败，将继续安装依赖...
+    echo.
+)
 
 REM 安装依赖
 pip install -r requirements.txt
