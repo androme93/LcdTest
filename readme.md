@@ -38,27 +38,41 @@ LcdTest的主要功能是测试液晶屏的显示和触摸是否正常：
 
 ## 安装和运行
 
-### 1. 安装Python依赖
+### Windows用户（推荐）
 
-```bash
-pip install -r requirements.txt
-```
+1. **安装依赖** - 双击运行 `install.bat`
+2. **启动程序** - 双击运行 `run.bat`
 
-### 2. 运行程序
+### 手动安装（所有平台）
 
-```bash
-python main.py
-```
+1. **安装Python依赖**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **运行程序**
+   ```bash
+   python main.py
+   ```
+   
+   或使用启动器（会自动检查环境）：
+   ```bash
+   python launcher.py
+   ```
 
 ## 项目结构
 
 ```
 LcdTest/
 ├── main.py                 # 主程序入口
+├── launcher.py            # 启动器（检查环境后运行）
 ├── device_checker.py       # 设备检测模块
 ├── lcd_test_widgets.py     # LCD测试界面组件
 ├── requirements.txt        # Python依赖列表
-├── readme.md              # 本文件
+├── install.bat            # Windows依赖安装脚本
+├── run.bat                # Windows快速启动脚本
+├── readme.md              # 项目说明（本文件）
+├── USAGE.md               # 详细使用指南
 └── screenshot/            # 截图目录
 ```
 
