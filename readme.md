@@ -7,6 +7,7 @@
 **当前版本：Python实现**
 - 原项目基于Qt C++开发
 - 现已重构为Python PyQt5实现，更易于维护和扩展
+- 📖 [查看完整迁移说明](MIGRATION.md)
 
 ## 功能概述
 
@@ -97,6 +98,12 @@ LcdTest/
 
 - **原版本**: 基于Qt C++ Widget开发
 - **当前版本**: 重构为Python PyQt5实现
+
+## 快速链接
+
+- 📘 [详细使用指南](USAGE.md)
+- 🔄 [迁移说明（C++ → Python）](MIGRATION.md)
+- 📦 [依赖列表](requirements.txt)
 
 ## 原作者联系方式
 
